@@ -7,33 +7,19 @@
 ul {
     list-style: none;
 }
-.header {
-    background-color: #141E30;
-    display: flex;
-    position: fixed;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center; /* Va funcionar de la mejor maneras siempre y cuando coloquemos una ALTURA */
-    align-items: center;
-    min-height: 4.5rem;
-}
 
-.navbar {
+
+.navbar-dark {
     background-color: #141E30;
     /* background: linear-gradient(to bottom, #200122, #6f0000); */
-    display: flex;
-    min-height: 4.5rem;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+    
 }
 
-.navbar a.navbar__logo {
+.navbar-brand {
     text-decoration: none;
     font-family: 'Orbitron', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #fff;
-    margin-left: 1rem;
 }
 
 .navbar .navbar__list{
@@ -354,8 +340,8 @@ button, input, select, textarea {
         animation-name: animacion_bichito;
         animation-duration: 10s;
         animation-iteration-count: infinite;
-      }
-      @keyframes animacion_bichito{
+    }
+    @keyframes animacion_bichito{
         0% {
             left: 0;
         }
@@ -399,7 +385,7 @@ button, input, select, textarea {
             left: 97%;
             color: white;
         }
-      }
+    }
       /* FIN KEYFRAME DE PRUEBA */
 }
 
