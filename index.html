@@ -30,19 +30,56 @@
     </nav>
     
     <main>
-        <section class="indexSeccion">
-            <div class="contenedor1">
-                <div class="contenedor__texto">
-                    <p>Instalaciones y reparaciones eléctricas en general.</p>
-                    <p>Proyectos habitacionales, industriales y comerciales.</p>
-                    <p>Mediciones de puesta a tierra y valores lumínicos.</p>
-                </div>
-                <div class="contenedor__botonPresupuesto">
-                    <a href="pag/contacto.html">PEDIDO DE PRESUPUESTO AQUI</a>
+        <section class="container">
+            <div class="row calesita_imagenes">
+                <article class="col-lg-6">
+                    <div class="contenedor1">
+                        <div class="contenedor__texto">
+                            <p>Instalaciones y reparaciones eléctricas en general.</p>
+                            <p>Proyectos habitacionales, industriales y comerciales.</p>
+                            <p>Mediciones de puesta a tierra y valores lumínicos.</p>
+                        </div>
+                        <div class="contenedor__botonPresupuesto">
+                            <a href="pag/contacto.html">PEDIDO DE PRESUPUESTO AQUI</a>
+                            <button type="button" class="btn btn-lg btn-info" data-toggle="popover" title="Presupuesto" data-content="El link lo llevara a la parte de contacto">Prueba Popover</button>
+                        </div>
+                    </div>
+                </article>
+                <div class="col-lg-6">
+                    <div id="calesita" class="carousel slide" data-ride="carousel"> <!-- CAROUSEL -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#calesita" data-slide-to="0" class="active"></li>
+                            <li data-target="#calesita" data-slide-to="1"></li>
+                            <li data-target="#calesita" data-slide-to="2"></li>
+                            <li data-target="#calesita" data-slide-to="3"></li>
+                            <li data-target="#calesita" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img data-toggle="tooltip" title="Prueba ToolTip" src="img/imagen_400x200.png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-toggle="popover" title="Prueba popover" data-content="Prueba popover en imagen" src="img/imagen_400x200.png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/imagen_400x200.png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/imagen_400x200.png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/imagen_400x200.png" class="d-block w-100">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#calesita" role="button" data-slide="prev"> <!-- FLECHA PREV -->
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#calesita" role="button" data-slide="next"> <!-- FLECHA NEXT -->
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
                 </div>
             </div>
-            
-
         </section>
     </main>
     
@@ -73,8 +110,8 @@
             
             <!-- Iconos de Redes sociales -->
             <div class="piePagina_contenedor__redSocial"> 
-                <a href="https:\\www.facebook.com"><img src="img/facebook.png" alt="Facebook"></a>
-                <a href="https://www.youtube.com/channel/UCzqlU5rz4XOwazfK59JCqTw"><img src="img/youtube.png" alt="YouTube"></a>
+                <a href="https:\\www.facebook.com"><img data-toggle="tooltip" data-title="Facebook" src="img/facebook.png" alt="Facebook"></a>
+                <a href="https://www.youtube.com/channel/UCzqlU5rz4XOwazfK59JCqTw"><img data-toggle="tooltip" data-title="YouTube" src="img/youtube.png" alt="YouTube"></a>
             </div>
 
             <!-- Informacion de autor -->
@@ -85,6 +122,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>    
+    <script src="js/scrip.js"></script>
+        
 </body>
 </html>
