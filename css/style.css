@@ -22,21 +22,12 @@ ul {
     color: #fff;
 }
 
-.navbar .navbar__list{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.navbar .navbar__list .navbar__link {
+.nav-link {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
-    color: #fff;
-    font-size: 0.7rem;
+    font-size: 1rem;
     margin: 0 1rem;
-}
-.navbar .navbar__list .navbar__link:hover{
-    color: brown;
 }
 main {
     background: linear-gradient(to bottom,#0b8793, #360033);
