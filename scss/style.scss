@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+/* USO DE SASS */
+
+
+
+/* VARIABLES */
+
+$box-shadow: rgba(0,0,0, .3);
+
+/* FIN DE VARIABLES */
+/* FIN USO DE SASS */
+
+
 ul {
     list-style: none;
 }
@@ -35,33 +47,35 @@ main {
 
 /* SECCION DEL INDEX */
 
-.container{
+main .container{
     min-height: 80vh;
 }
 .contenedor__texto{
     justify-content: space-between;
     padding-top: 2rem;
-    
+    p{
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        color: #fff;
+    }
 }
-.contenedor__texto p{
-    padding: 1rem 0;
-    font-size: 1.5rem;
-    color: #fff;
-}
+
 .contenedor__botonPresupuesto{
     margin: 2rem;
     display: flex;
+    a{
+        text-decoration: none;
+        font-size: 1.7rem;
+        padding: 1rem 1rem;
+        background-color: $box-shadow;
+        color: #fff;
+    }
+    a:hover{
+        color: coral;
+    }
 }
-.contenedor__botonPresupuesto a{
-    text-decoration: none;
-    font-size: 1.7rem;
-    padding: 1rem 1rem;
-    background-color: rgba(0,0,0, .3);
-    color: #fff;
-}
-.contenedor__botonPresupuesto a:hover{
-    color: coral;
-}
+
+
 /* FIN SECCION DEL INDEX */
 
 /* INICIO FOOTER/PIE DE PAGINA */
@@ -73,38 +87,37 @@ main {
     width: 100%;
     margin: 0 auto;
     min-height: 9rem;
-}
-.piePagina .piePagina_contenedor{
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-around;
-    width: 60%;
-    flex-wrap: wrap;
-}
-.piePagina .piePagina_contenedor .piePagina_contenedor__lista{
-    margin: 0 auto;
-    min-width: 50%;
-    padding: 1rem 0;
-}
-.piePagina .piePagina_contenedor .piePagina_contenedor__lista h3{
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
-}
-.piePagina .piePagina_contenedor .piePagina_contenedor__redSocial {
-    display: flex;
-    padding: 3rem 0;
-}
-.piePagina .piePagina_contenedor .piePagina_contenedor__redSocial a{
-    margin: 0 auto;
-    margin: 0 1rem;
-    /* padding: 0 1rem; */
-}
-.piePagina p{
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 auto;
-    width: 90%;
-    padding-bottom: 1rem;
+    .piePagina_contenedor{
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-around;
+        width: 60%;
+        flex-wrap: wrap;
+        .piePagina_contenedor__lista{
+            margin: 0 auto;
+            min-width: 50%;
+            padding: 1rem 0;
+        }
+        .piePagina_contenedor__lista h3{
+            font-size: 1.5rem;
+            padding-bottom: 1rem;
+        }
+        .piePagina_contenedor__redSocial {
+            display: flex;
+            padding: 3rem 0;
+            a{
+                margin: 0 auto;
+                margin: 0 1rem;
+            }
+        }
+    }
+    p{
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 auto;
+        width: 90%;
+        padding-bottom: 1rem;
+    }
 }
 
 .prueba_keyframe{
@@ -124,28 +137,32 @@ main {
     flex-wrap: wrap;
     color: #fff;
     font-family: 'Poppins', sans-serif;
+    .contenedorServicios__div {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        background-color: $box-shadow;
+        img{
+            margin: 0 auto;
+            padding: 1rem 0;
+        }
+        p{
+            padding-top: 1rem;
+            text-align: center;
+        }
+        .contenedorServicios__div__tituloParrafo {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
 }
 
-.contenedorServicios .contenedorServicios__div {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    background-color: rgba(0,0,0, .3);
-}
 
-.contenedorServicios .contenedorServicios__div img{
-    margin: 0 auto;
-    padding: 1rem 0;
-}
 
-.contenedorServicios .contenedorServicios__div p{
-    padding-top: 1rem;
-    text-align: center;
-}
-.contenedorServicios .contenedorServicios__div .contenedorServicios__div__tituloParrafo {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
+
+
+
+
 /* FIN SERVICIOS */
 
 /* INICIO FOTOS */
@@ -170,29 +187,33 @@ main {
     min-height: 80vh;
     margin: 0 auto;
     flex-wrap: wrap;
-}
-.contenedorSobreMi .contenedorSobreMi__imagen{
-    padding: 9rem 2rem;
-}
-.contenedorSobreMi .contenedorSobreMi__texto{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
-    color: #fff;
-    background-color: rgba(0,0,0, .3);
-}
-.contenedorSobreMi .contenedorSobreMi__texto p{
-    padding: 1rem 1rem;
+    .contenedorSobreMi__imagen{
+        padding: 9rem 2rem;
+    }
+    .contenedorSobreMi__texto{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+        color: #fff;
+        background-color: $box-shadow;
+        p{
+            padding: 1rem 1rem;
+        }
+        .contenedorSobreMi__texto__tituloParrafo{
+            font-size: 2rem;
+            font-weight: bold;
+            padding-bottom: 1rem;
+            text-decoration: underline;
+        }
+    }
 }
 
-.contenedorSobreMi .contenedorSobreMi__texto .contenedorSobreMi__texto__tituloParrafo{
-    font-size: 2rem;
-    font-weight: bold;
-    padding-bottom: 1rem;
-    text-decoration: underline;
-}
+
+
+
+
 /* FIN SOBRE_MI */
 
 /* INICIO CONTACTO */
@@ -206,24 +227,49 @@ main {
     color: #fff;
     font-family: 'Poppins', sans-serif;
     flex-wrap: wrap;
-}
-
-/* INICIO FORMULARIO */
-.contenedorContacto .contenedorContacto__formulario{
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-}
-.contenedorContacto .contenedorContacto__formulario p{
-    font-size: 2rem;
-}
-
-.contenedorContacto .contenedorContacto__formulario form{
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2rem;
-    background-color: rgba(0,0,0, .3);
-    padding: 1rem 1rem;
+    .contenedorContacto__formulario{ /* INICIO FORMULARIO */
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        p{
+            font-size: 2rem;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            font-size: 1.2rem;
+            background-color: $box-shadow;
+            padding: 1rem 1rem;
+        }
+    }
+    .contenedorContacto__informacionContacto{  /* INICIO INFORMACION DE CONTACTO */
+        display: flex;
+        margin: 0 auto;
+        min-width: 20%;
+        min-height: 20%;
+        padding: 1rem 1rem;
+        align-items: center;
+        flex-wrap: wrap;
+        .contenedorContacto__informacionContacto__imagen{
+            display: flex;
+            flex-direction: column;
+            padding-right: 1rem;
+            align-items: center;
+            font-size: 1.2rem;
+        }
+        .contenedorContacto__informacionContacto__texto{
+            display: flex;
+            flex-direction: column;
+            padding: 1rem 1rem;
+            background-color: $box-shadow;
+            font-size: 1rem;
+            .tituloParrafo{
+                font-size: 1.5rem;
+                font-weight: bold;
+                padding-bottom: 1rem;
+            } /* FIN INFORMACION DE CONTACTO */
+        }
+    }
 }
 
 button, input, select, textarea {
@@ -233,41 +279,6 @@ button, input, select, textarea {
 }
 
 /* FIN FORMULARIO */
-
-/* INICIO INFORMACION DE CONTACTO */
-.contenedorContacto .contenedorContacto__informacionContacto{
-    display: flex;
-    margin: 0 auto;
-    min-width: 20%;
-    min-height: 20%;
-    padding: 1rem 1rem;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.contenedorContacto .contenedorContacto__informacionContacto .contenedorContacto__informacionContacto__imagen{
-    display: flex;
-    flex-direction: column;
-    padding-right: 1rem;
-    align-items: center;
-    font-size: 1.2rem;
-}
-
-.contenedorContacto .contenedorContacto__informacionContacto .contenedorContacto__informacionContacto__texto{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 1rem;
-    background-color: rgba(0, 0, 0, 0.3);
-    font-size: 1rem;
-}
-
-.contenedorContacto .contenedorContacto__informacionContacto .contenedorContacto__informacionContacto__texto .tituloParrafo{
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding-bottom: 1rem;
-}
-
-/* FIN INFORMACION DE CONTACTO */
 
 /* FIN CONTACTO */
 
