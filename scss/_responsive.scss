@@ -1,0 +1,102 @@
+/* INICIO RESPONSIVE */
+/* UTILIZO EN MAX PORQUE YA INICIE EL PROYECTO DE ESTA MANERA */
+
+@media screen and (min-width: 768px){
+    .contenedorFotos-grid{
+        grid-template-columns: repeat(3, auto);
+    }
+    .navbar a.navbar__logo{
+        font-size: 2.4rem;
+    }
+    .navbar .navbar__list .navbar__link{
+        font-size: 1rem;
+    }
+    .piePagina .piePagina_contenedor{
+        flex-wrap: nowrap;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    .contenedorFotos-grid{
+        grid-template-columns: repeat(4, auto);
+    }
+    .navbar a.navbar__logo{
+        font-size: 2.9rem;
+    }
+    .navbar .navbar__list .navbar__link{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .contenedorFotos-grid{
+        grid-template-columns: repeat(6, auto);
+    }
+
+    .contenedorFotos-grid img:hover{
+        transform: scale(2,2);
+        
+    }
+    /* INICIO KEYFRAME DE PRUEBA */
+    .prueba_keyframe {
+        display: block;
+        background: #444ead;
+        color: white;
+        padding: .2rem .3rem 1rem .3rem;
+        position: relative;
+        width: 2.1rem;
+        border-radius: 2rem 2rem 0 0;
+        animation-name: animacion_bichito;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes animacion_bichito{
+        0% {
+            left: 0;
+        }
+        10% {
+            left: 10%;
+            color: #9b59b6;
+        }
+        20% {
+            left: 20%;
+            color: white;
+        }
+        30% {
+            left: 30%;
+            color: #9b59b6;
+        }
+        40%{
+            left: 40%;
+            color: white;
+        }
+        50% {
+            left: 50%;
+            color: #9b59b6;
+        }
+        60% {
+            left: 60%;
+            color: white;
+        }
+        70% {
+            left: 70%;
+            color: #9b59b6;
+        }
+        80%{
+            left: 80%;
+            color: white;
+        }
+        90% {
+            left: 90%;
+            color: #9b59b6;
+        }
+        100% {
+            left: 97%;
+            color: white;
+        }
+    }
+      /* FIN KEYFRAME DE PRUEBA */
+}
+
+/* FIN RESPONSIVE */

@@ -1,0 +1,32 @@
+/* SECCION DEL INDEX */
+
+main .container{
+    min-height: 80vh;
+}
+.contenedor__texto{
+    justify-content: space-between;
+    padding-top: 2rem;
+    p{
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+}
+
+.contenedor__botonPresupuesto{
+    margin: 2rem;
+    display: flex;
+    a{
+        text-decoration: none;
+        font-size: 1.7rem;
+        padding: 1rem 1rem;
+        background-color: $box-shadow;
+        color: #fff;
+    }
+    a:hover{
+        color: coral;
+    }
+}
+
+
+/* FIN SECCION DEL INDEX */

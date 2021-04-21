@@ -1,0 +1,32 @@
+/* INICIO SERVICIOS */
+
+.contenedorServicios {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 80vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    .contenedorServicios__div {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        background-color: $box-shadow;
+        img{
+            margin: 0 auto;
+            padding: 1rem 0;
+        }
+        p{
+            padding-top: 1rem;
+            text-align: center;
+        }
+        .contenedorServicios__div__tituloParrafo {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+}
+/* FIN SERVICIOS */
