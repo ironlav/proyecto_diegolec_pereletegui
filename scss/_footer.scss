@@ -1,9 +1,30 @@
 /* INICIO FOOTER/PIE DE PAGINA */
 
+/* OPERACIONES SASS */
+$color-fuente: #000;
+$size-h3: 3rem;
+$color-fondo:(
+    modo-oscuro: #161a1d,
+    modo-normal: #ebebeb
+);
+@each $fondo, $color in $color-fondo{
+    .#{$fondo}{
+        background-color: $color;
+    }
+}
+@if $color-fuente == #000 {
+    $color-fuente: #fff;
+    $size-h3: $size-h3 - 1.5rem;
+} @else {
+    $color-fuente: #0b8793;
+}
+
+
+
 .piePagina{
     font-family: 'Poppins', sans-serif;
     background-color: #161a1d;
-    color: #fff;
+    color: $color-fuente;
     width: 100%;
     margin: 0 auto;
     min-height: 9rem;
@@ -19,7 +40,7 @@
             padding: 1rem 0;
         }
         .piePagina_contenedor__lista h3{
-            font-size: 1.5rem;
+            font-size: $size-h3;
             padding-bottom: 1rem;
         }
         .piePagina_contenedor__redSocial {

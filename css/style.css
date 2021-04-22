@@ -29,6 +29,13 @@ main .container {
 
 /* FIN SECCION DEL INDEX */
 /* INICIO FOOTER/PIE DE PAGINA */
+/* OPERACIONES SASS */
+.modo-oscuro {
+  background-color: #161a1d; }
+
+.modo-normal {
+  background-color: #ebebeb; }
+
 .piePagina {
   font-family: 'Poppins', sans-serif;
   background-color: #161a1d;
