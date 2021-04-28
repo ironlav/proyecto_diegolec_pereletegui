@@ -40,16 +40,6 @@ main {
     background: linear-gradient(to bottom,#0b8793, #360033);
 }
 
-
-
-/* INICIO TRANSFORMACION/TRANSICION */
-
-.contenedorFotos-grid img:hover{
-    transform: scale(1.5,1.5);
-    border: solid 1px #000;
-    transition: all 1s;
-}
-
 /* FIN TRANSFORMACION/TRANSICION */
 
 .calesita_imagenes {
