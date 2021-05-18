@@ -205,7 +205,9 @@ button, input, select, textarea {
   .navbar .navbar__list .navbar__link {
     font-size: 1rem; }
   .piePagina .piePagina_contenedor {
-    flex-wrap: nowrap; } }
+    flex-wrap: nowrap; }
+  .contenedorContacto__formulario form {
+    padding: 0.5rem 0.5rem; } }
 
 @media screen and (min-width: 1024px) {
   .contenedorFotos-grid {
