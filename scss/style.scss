@@ -42,27 +42,3 @@ main {
 }
 
 /* FIN TRANSFORMACION/TRANSICION */
-
-.calesita_imagenes {
-    justify-content: center;
-}
-.carousel {
-    margin-top: 5rem;
-    overflow: hidden;
-    border-radius: 45px;
-}
-.carousel .carousel-indicators li {
-    background-color: #000;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-}
-.carousel .carousel-indicators li.active {
-    background-color: #1989ac;
-}
-.carousel .carousel-arrow.prev {
-    left: 3rem;
-}
-.carousel .carousel-arrow.next {
-    right: 3rem;
-}
