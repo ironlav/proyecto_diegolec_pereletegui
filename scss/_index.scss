@@ -5,10 +5,13 @@ main .container{
 }
 .contenedor__texto{
     justify-content: space-between;
-    padding-top: 2rem;
+    margin-top: 2rem;
+    padding-left: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.4);
     p{
-        padding: 1rem 0;
+        margin: 1rem 0;
         font-size: 1.5rem;
+        padding-bottom: 0.5rem;
         color: #fff;
     }
 }
@@ -28,5 +31,13 @@ main .container{
     }
 }
 
+.no-calesita{
+    display: none;
+}
+
+.fondoIndex{
+    background-image: url("../img/fondoIndex.jpg");
+    background-size: cover;
+}
 
 /* FIN SECCION DEL INDEX */
